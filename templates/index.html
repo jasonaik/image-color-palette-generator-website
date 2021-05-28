@@ -66,8 +66,8 @@
 
                 </table>
 
-                <h2>Select a file to upload</h2>
-                <p>
+                <h2 class="element-margin">Select a file to upload</h2>
+                <p class="element-margin">
                     {% with messages = get_flashed_messages() %}
                       {% if messages %}
                         <ul>
@@ -79,7 +79,7 @@
                     {% endwith %}
                 </p>
 
-                <form method="post" action="/{{filename}}" enctype="multipart/form-data">
+                <form method="post" action="/{{filename}}" enctype="multipart/form-data" class="element-margin">
                     <dl>
                         <p>
                             <input type="file" name="file" class="form-control" autocomplete="off" required>
