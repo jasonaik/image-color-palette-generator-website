@@ -8,8 +8,7 @@ UPLOAD_FOLDER = "static/images"
 ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg'}
 
 app = Flask(__name__)
-# app.config['SECRET_KEY'] = os.environ.get("SECRET_KEY")
-app.config['SECRET_KEY'] = "VeryGoodSecretKey12345"
+app.config['SECRET_KEY'] = os.environ.get("SECRET_KEY")
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024
 Bootstrap(app)
