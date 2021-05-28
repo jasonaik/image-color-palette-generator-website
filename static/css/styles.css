@@ -16,3 +16,7 @@
 .element-margin {
     margin: 20px;
 }
+
+hr {
+    width: 100%;
+}
